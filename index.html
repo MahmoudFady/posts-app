@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>posts</title>
+  </head>
+  <body>
+    <section id="post-form">
+      <div class="container">
+        <div class="row flex-column justify-content-center align-items-center">
+          <div class="col-md-6"><h1>add post</h1></div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="title"
+                  placeholder="post title..."
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="post content..."
+                  name="content"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="file"
+                  name="postMedia"
+                  id="postMedia"
+                  style="display: none"
+                  multiple
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  type="button"
+                  class="btn btn-light form-control"
+                  onclick="document.getElementById('postMedia').click()"
+                >
+                  upload file
+                </button>
+              </div>
+              <div class="form-group" id="imagePreview"></div>
+              <div class="form-group">
+                <button class="btn btn-dark">send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="posts-container">
+      <div class="container">
+        <div
+          class="row flex-column justify-content-center align-items-center"
+        ></div>
+      </div>
+    </section>
+    <section id="no-posts">
+      <div class="container">
+        <div class="row flex-column justify-content-center align-items-center">
+          <h3>no posts yet</h3>
+        </div>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

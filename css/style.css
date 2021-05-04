@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-transform: capitalize;
+}
+.showEle {
+  display: block;
+}
+.hideEle {
+  display: none;
+}
+#posts-container {
+  margin-top: 50px;
+}
+#posts-container .row > div {
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 3px #ccc;
+}
+#posts-container .row > div button {
+  float: right;
+}
+#imagePreview {
+  margin-bottom: 25px;
+  width: 100%;
+  min-height: 120px;
+  display: none;
+}
+#imagePreview > * {
+  height: 120px;
+  float: left;
+}
